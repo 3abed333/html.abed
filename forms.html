@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+      footer{
+        background-color: blueviolet;
+          color: white;
+         
+          bottom: 0;
+          text-align: center;
+      }
+      header {
+          background-color: blueviolet;
+          color: white;
+          position:sticky;
+          top: 0;
+      }
+      a {
+          color: black;
+          
+      }
+      a:hover {
+        color: red;
+        text-decoration: none;
+      }
+      input:hover {color: aqua;
+        
+      }
+      button:hover{
+        font-size: 140%;
+      }
+      nav{ float: right;
+            text-align: right;
+            width: 50%;
+            margin-left: .5em;
+            margin-bottom: .5em;
+            font-size: 1.5;
+            padding-top: .2em;
+            }
+            legend{font-family: 'Oswald', sans-serif; }
+            a:focus {
+              background-color: chartreuse;
+            }
+     </style>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+
+  <header>
+    <nav> 
+      <a  href="elearning.html">back to the main menu &nbsp; </a><span style="color: black;">|</span>
+      <a href="contact.html">Contact us &nbsp;</a><span style="color: black;">|</span>
+      <a href="https://www.ltuc.com/#aboutUs-section">About us</a>
+    
+    </nav>
+  <h2> Elearning System </h2>
+  </header>
+  <hr>
+  <fieldset>
+  <legend>Sign up</legend>
+  <form action="tableelearn.html">
+    <p>
+          First name: &nbsp; 
+   <input type="text" id="txtid" required >
+  </p>
+  <P>
+   last name: &nbsp;
+   <input type="text" id="txtid" required></P>
+
+   
+
+  <p> phone number: 
+   <input id="phone" name="phone" type="tel" placeholder="123-456-6789" required >
+   </p> 
+   <p>
+   Email:
+   <input type="email" name="email" id="email" required>
+   </p>
+   <p> Password: 
+   <input type="password"required > </p> 
+   <p>
+   gender: <br>
+   <label>male<input type="radio" name="sex" value="male" checke required></label>
+   <label> female<input type="radio" name="sex" value="female"required></label>
+  </p>
+  
+
+  your role:
+  <select name="job">
+   <option value="student" >student</option>
+      <option value="doctor" name="doctor"> doctor</option>
+        <option value="assistant techer" name="assistant techer">assistant techer</option><br>
+  
+  </select><br>
+  <p>linkedin link:
+  <input type="linkedin" placeholder="https://example.com"required >
+  </p>
+  <p>Enter the number of courses you are interested in
+   
+    <select name="rate" id=""required>
+      <option value="6">6</option>
+      <option value="5">5</option>
+      <option value="4">4</option>
+      <option value="3">3</option>
+      <option value="2">2</option>
+      <option value="1">1</option>
+    </select>
+  </p>
+  <p>Birth date:
+    <input type="date" value="birth date"required>
+  </p>
+  <p>
+    <button type="submit">submit</button>
+    </p>
+    
+  </form>
+ 
+</fieldset>
+<hr width="100%">
+
+<footer> <h1>&copy;to authors</h1> 
+  <img width="2%" src="WhatsApp Image 2023-04-18 at 1.38.24 AM (1).jpeg">
+  <img width="2%" src="WhatsApp Image 2023-04-18 at 1.38.24 AM (2).jpeg">
+  <img width="2%" src="WhatsApp Image 2023-04-18 at 1.38.24 AM (3).jpeg">
+  <img width="2%" src="WhatsApp Image 2023-04-18 at 1.38.24 AM.jpeg">
+</footer>
+
+    </body>
+
+</html>
