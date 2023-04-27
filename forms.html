@@ -5,6 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
+    <script>
+      let username = prompt ("enter the username:");
+      let confirmmessage = confirm("do you want to take a quick quiz?")
+      if (confirmmessage===true){
+        const questions = [
+    {
+      question: "Enter a number between 1 and 100 that is divisible by 3, 5, 10, and 15.",
+      answer: "30"
+    },
+    {
+      question: "What element does O represent on the periodic table?",
+      answer: "Oxygen"
+    },
+    {
+      question: "What's the capital of Italy?",
+      answer: "Rome"
+    },
+    {
+      question: "How many continents are there?",
+      answer: "7"
+    }
+  ];
+  let score = 0;
+
+
+for (const question of questions) {
+  
+  const userAnswer = prompt(question.question);
+
+  if (userAnswer.toLowerCase() === question.answer.toLowerCase()) {
+      score++;
+    } else if (Math.abs(parseInt(userAnswer) - parseInt(question.answer)) === 1) {
+      score += 0.5;
+    }
+  }
+  const passingScore = 3.5;
+  const message = score >= passingScore ? "nice You passed the quiz." : "Sorry, you failed the quiz.";
+  alert(`${message}\nYour score is ${score}`);
+} else {
+  
+  alert("OK you can start with the sign up page.");
+      }
+      
+
+      
+      
+  </script>
     <style>
       footer{
         background-color: blueviolet;
@@ -68,8 +115,10 @@
   <form action="tableelearn.html">
     <p>
           First name: &nbsp; 
-   <input type="text" id="txtid" required >
-  </p>
+          <script>
+          document.write(`<input type="text" value="${username}">`)
+          </script>
+          </p>
   <P>
    last name: &nbsp;
    <input type="text" id="txtid" required></P>
